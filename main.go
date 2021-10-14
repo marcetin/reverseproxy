@@ -28,7 +28,7 @@ func main() {
 	// Get cmd line parameters
 	// service := flag.String("srv", "", "Service")
 	// path := flag.String("path", "reverseproxy.json", "Path")
-	port := flag.String("port", "80", "Port")
+	// port := flag.String("port", "80", "Port")
 	loglevel := flag.String("loglevel", "debug", "Logging level (debug, info, warn, error)")
 	flag.Parse()
 
@@ -65,10 +65,10 @@ func main() {
 	h := &baseHandle{}
 	http.Handle("/", h)
 	j.WWW.Handler = h
-	j.WWW.Addr = ":11444"
+	j.WWW.Addr = ":80"
 	log.Fatal().Err(j.WWW.ListenAndServe())
 
-	log.Info().Msg("Port: " + *port)
+	log.Info().Msg("Port: 80")
 
 }
 
