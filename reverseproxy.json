@@ -6,6 +6,7 @@
     "our.okno.rs":                "http://127.0.0.1:14422",
     "enso.okno.rs":               "http://127.0.0.1:14433",
     "p9c.okno.rs":                "http://127.0.0.1:1337",
+    "parallelcoin.io":      "http://127.0.0.1:4434",
     "admin.parallelcoin.io":      "http://127.0.0.1:11122",
     "api.parallelcoin.io":        "http://127.0.0.1:11123"
 }
